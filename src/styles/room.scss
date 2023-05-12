@@ -1,0 +1,194 @@
+/** room页面样式 */
+.room_page_right {
+  width: 320px;
+}
+.card_title {
+  width: 100%;
+  display: flex;
+}
+.card_title_left{
+  flex:1;
+  position:relative;
+  padding-left:10px;
+  font-weight:600
+}
+.card_title_left::before{
+  position:absolute;
+  left:-4px;
+  top:2px;
+  display:block;
+  content:" ";
+  width:5px;
+  height:18px;
+  background-color:#d0421c;
+  border-radius:3px
+}
+.card_title_left.title_c_1:before{
+  background-color:#15cde7
+}
+.right_taggle_btn:hover{opacity:.6}
+.right_taggle_btn{
+  position:fixed;
+  right:320px;
+  top:50%;
+  margin-top:-39px;
+  cursor:pointer;
+}
+.card_floor{
+  margin: 20px 0;
+}
+.card_room_list {
+  display: flex;
+  flex-wrap: wrap;
+}
+.card_room_one {
+  background-color: #f6f7f9;
+  width: 210px;
+  height: 133px;
+  border-radius: 8px;
+  margin: 5px;
+  margin-bottom: 10px;
+  overflow: hidden;
+  position: relative;
+}
+.card_room_one .card_room_one_top {
+  padding: 10px;
+  padding-bottom: 5px;
+}
+.card_room_one .card_room_o_t_a {
+  font-size: 22px;
+  font-weight: 600;
+  height: 27px;
+  color: #ccc;
+  margin-bottom: 5px;
+  word-break: break-all;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+
+.card_room_one .card_room_o_t_a span {
+  font-size: 12px;
+  font-weight: 400;
+  color: #333;
+}
+.card_room_one .card_room_o_t_b {
+  height: 27px;
+  font-size: 15px;
+}
+.card_room_one .card_room_o_t_c {
+  height: 27px;
+  font-size: 15px;
+}
+.card_room_one .card_room_one_bottom {
+  padding: 5px;
+  height: 30px;
+  background-color: #ccc;
+  color: #fff;
+  border-bottom-left-radius: 8px;
+  border-bottom-right-radius: 8px;
+  display: flex;
+  justify-content: space-between;
+  font-size: 15px;
+}
+.card_room_status_1 .card_room_o_t_a {
+  color: #7a6e86;
+}
+.card_room_status_1 .card_room_one_bottom {
+  background-color: #7a6e86;
+}
+.card_room_status_3 .card_room_o_t_a {
+  color: #0a8595;
+}
+.card_room_status_3 .card_room_one_bottom {
+  background-color: #15cde7;
+}
+.card_room_status_5 .card_room_o_t_a {
+  color: #ffb645;
+}
+.card_room_status_5 .card_room_one_bottom {
+  background-color: #ffb645;
+}
+.card_room_one_tag {
+  color: #fff;
+  display: inline;
+  margin: 4px;
+  padding: 1px 3px;
+  border-radius: 3px;
+  font-size: 12px;
+  background-color: #ccc;
+  border: 1px solid #ccc;
+}
+.card_room_one_tag span {
+  background-color: #fff;
+  color: #ccc;
+  padding: 1px 3px;
+  margin-left: 3px;
+}
+.card_room_tag_2 {
+  background-color: #ff4d87;
+  border: 1px solid #ff4d87;
+  padding-right: 0;
+}
+.card_room_tag_2 span {
+  color: #ff4d87;
+}
+
+
+.modal {
+  background-color: #fff;
+  overflow-x: auto;
+  overflow-y: auto;
+  display: flex;
+  flex-direction: column;
+  /*width: 1130px;*/
+}
+.modal .modal-body{
+  position: relative;
+  padding: 20px 25px;
+}
+.bor-l {
+  margin: 10px 0;
+  position: relative;
+}
+.div-font-style>span, .div-font-style {
+  font-size: 17px;
+  font-weight: 700;
+}
+.bor-l .div-font-style:before {
+  content: "";
+  position: absolute;
+  display: inline-block;
+  border-left: 2px solid #e24c4c;
+  border-right: 2px solid #e24c4c;
+  background-color: #e24c4c;
+  border-radius: 3px;
+  height: 18px;
+  left: 0;
+}
+.modal .modal-body .fangwuxinxi {
+  background-color: #f9f9f9;
+  padding: 5px 10px;
+  margin-bottom: 20px;
+}
+.modal .modal-body .fangwuxinxi .el-col{
+  margin-top: 5px;
+  margin-bottom: 5px;
+}
+.el-col-6 {
+  width: 25%;
+}
+.modal .modal-body .fangwuxinxi .el-col>div {
+  font-size: 14px;
+  color: #333;
+}
+.modal .modal-body .demo-input-suffix {
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  margin: 5px 0;
+}
+.room_detail_buttons .el-button {
+  margin: 4px;
+  font-size: 14px!important;
+}

@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <link rel="icon" href="<%= BASE_URL %>favicon.ico">
+    <title><%= webpackConfig.name %></title>
+  </head>
+  <body>
+    <!--echarts 采用外部CDN引入，可以减少打包文件体积，加快页面渲染-->
+    <script src="//cdn.bootcdn.net/ajax/libs/echarts/4.7.0/echarts.min.js"></script>
+    <!--百度地图 jsAPI -->
+    <script type="text/javascript" src="http://api.map.baidu.com/api?v=3.0&ak="></script>
+    <script src="https://unpkg.com/tinymce@4.7.5/tinymce.min.js"></script>
+    <noscript>
+      <strong>We're sorry but <%= webpackConfig.name %> doesn't work properly without JavaScript enabled. Please enable it to continue.</strong>
+    </noscript>
+    <div id="app"></div>
+    <!-- built files will be auto injected -->
+  </body>
+</html>
